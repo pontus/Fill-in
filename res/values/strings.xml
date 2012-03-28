@@ -3,5 +3,8 @@
 
     <string name="hello">Hello World, FillinActivity!</string>
     <string name="app_name">Fill in</string>
+    <string name="share">Share!</string>
+    <string name="exit">Exit</string>
+    <string name="newpicture">New picture</string>
 
 </resources>

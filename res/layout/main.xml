@@ -4,45 +4,93 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:onClick="onExitClick"
-        android:text="Exit" />
-
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:scaleType="fitXY"
-        android:gravity="top"
-        android:orientation="vertical" >
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:scaleType="fitXY" >
 
-        
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="match_parent"
+            android:layout_gravity="center"
             android:layout_height="match_parent"
-            
-            android:scaleType="fitXY"
-            
-            />
-            
-        
+            android:scaleType="fitXY" />
     </LinearLayout>
 
-    <LinearLayout         android:layout_width="match_parent"
-        android:orientation="horizontal"
+    <LinearLayout
+        android:id="@+id/colorLayout"
+        android:layout_width="match_parent"
         android:layout_height="20dp"
-        >
+        android:orientation="horizontal" >
 
-        <ImageView
-            android:id="@+id/imageView2"
+        <Button
+            android:id="@+id/colorButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/title_bar" />
-    
+            android:layout_gravity="center"
+            android:longClickable="true"
+            android:onClick="onColorButtonClick"
+            android:text="" />
+
+        <Button
+            android:id="@+id/colorButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:longClickable="true"
+            android:onClick="onColorButtonClick"
+            android:text="" />
+
+        <Button
+            android:id="@+id/colorButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:longClickable="true"
+            android:onClick="onColorButtonClick"
+            android:text="" />
+
+        <Button
+            android:id="@+id/colorButton4"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="#ff0000"
+            android:longClickable="true"
+            android:onClick="onColorButtonClick"
+            android:text="" />
+
+        <Button
+            android:id="@+id/functionButton"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="#000000"
+            android:textColor="#cccccc"
+            android:gravity="center"
+            
+            android:longClickable="true"
+            
+            android:text="+" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onExitClick"
+            android:text="Exit" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onTemplateClick"
+            android:text="Template" />
     </LinearLayout>
+
 </LinearLayout>
